@@ -1,0 +1,978 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+:root{
+    --active:#898a8d;
+    --navList:#484c53;
+    --headingText:#343434;
+    --productShadow:#343434;
+    --productName:#6d7075;
+    --price:#cc302b;
+    --btnBagcolor:#385777;
+    --subscribeBg:#6e7780;  
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.wrapper{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+a{
+    text-decoration: none;
+}
+
+.navitems{
+    /* height: 185px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.navitems{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logopart{
+    /* background-color: blue; */
+    width:30%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+.logoimg{  
+    width:257px;
+    /* border:2px solid green; */
+}
+.logoimg img{
+    object-fit: contain;
+}
+.logotoggele{
+    display: none;
+}
+.navlist{
+    width:50%;
+}
+.listitems{   
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    list-style: none;    
+}
+.listitems{
+    gap:23px;
+}
+.listitems a{
+    font-size: 15px;
+    font-weight: 400;
+    font-family:"Nunito",sans ;
+}
+.active a {
+    color:var(--active) !important ;
+}
+.listitems li a{
+    color:var(--navList);
+    font-weight: 400;
+    font-size: 15px;
+    text-transform:uppercase;
+}
+
+/* banner part */
+
+.bannar_div{
+    background-image: url("../images/hearing-loss-disability-768x480.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 552px;
+    text-align: center;
+   
+}
+.bannarText{
+    padding-top: 134px;
+}
+.bannarText p{
+    font-size: 24px;
+    color: #ffe8d3;
+    padding-bottom: 50px;
+}
+.bannarText h1{
+    font-size: 63px;
+    color: white;
+    padding-bottom: 45px;
+}
+.bannarText button{
+    padding: 15px 30px;
+    border-radius: 20px;
+    background-color: #385777;
+    color: white;
+    border: none;
+}
+/*  buy section */
+.buy_div{
+    margin-top: 100px;
+    height: 760px;
+}
+.heading_text{
+    display:flex ;
+    align-items: center;
+    justify-content:space-between;
+    
+}
+.left h2{
+    color:var(--headingText) ;
+    font-weight: 400;
+    font-size: 40px;
+}
+.right p a{
+    color: var(--price);
+    font-size: 20px;
+    font-weight: 600;
+}
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+.card img{
+    height: 483px;
+    width: 280px;
+    object-fit: cover;
+}
+.about_card{
+  text-align: center;
+}
+.about_card .writer_name{
+    font-size: 19px;
+    color: var(--productName);
+    font-weight: 400;
+}
+.about_card .bookName{
+    padding: 15px;
+    color: var(--headingText);
+    font-size: 20px;
+    font-weight: 400;
+}
+.about_card .price{
+    font-size: 20px;
+    color: var(--price);
+    font-weight: 400;
+}
+.price .ps{
+    color:var(--productShadow);
+    font-size: 18px;
+}
+
+/* book tipes part */
+.book_type{
+    height: 450px;
+}
+.book_type_heading{
+     padding-bottom: 50px;
+}
+.book_type_card{
+    width: 225px;
+    height:260px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 1px #898a8d;
+}
+.book_type_imageDiv{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap: 48px;
+}
+.book_type_card img{
+    width: 225px;
+    height: 178px;
+}
+.book_type_card p{
+    font-size: 25px;
+    color: #343434;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 17px;
+}
+/* lamstar book part */
+.markLamster_bookDiv{
+    height: 900px;
+}
+.bookImage img{
+    height: 600px;
+    width: 433px;
+}
+.textPart .name{
+    font-size: 20px;
+    font-weight: 400;
+    color: #cc302b;
+}
+.textPart .tittel{
+    font-size: 50px;
+    font-weight: 400;
+    color: #343434;
+    padding-bottom: 30px;
+}
+.textPart .writerName{
+    color: #484c53;
+    font-size: 25px;
+    font-weight: 400;
+    padding-bottom: 52px;
+}
+.textPart .aboutBook{
+    color: #484c53;
+    padding-bottom: 40px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.textPart .price{
+    padding-bottom: 50px;
+    color: #343434;
+}
+.textPart .price span{
+    color: #cc302b;
+}
+.textPart button{
+    padding: 15px 30px;
+    border-radius: 20px;
+    background-color: #385777;
+    color: white;
+    border: none;
+}
+.markLamster_bookDiv{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    background-color: #eedfcc;
+    gap: 150px;
+}
+.textPart{
+    height: 575px;
+    width: 440px;
+}
+
+/* authors Name div */
+
+.authorsName-div{
+    height: 900px;
+    background-repeat: no-repeat;
+    background-position:right;
+    background-color: #6e7780;
+    background-image: url("../images/tree\ book.png");
+}
+.headingPart{
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 100px;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.leftSide{
+    color: white;
+}
+.leftSide h2{
+    font-size: 40px;
+    font-weight: 400;
+    padding-bottom: 35px;
+}
+.leftSide p{
+   font-size: 20px;
+   font-weight: 400;
+}
+.rightSide p a{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+   font-weight: 400;
+}
+.authorsImages{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 65px;
+}
+.authorsImages h3{
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.image_card{
+    width: 280px;
+    height: 380px;
+   
+}
+.image_card img{
+    width: 280px;
+    height: 280px;
+}
+/* email part */
+.emailPart{
+    height: 280px;
+    background-color: #5b9894;
+    display: flex;
+    gap: 140px;
+    align-items: center;
+}
+.emailText{
+    width: 670px;
+}
+.emailText h2{
+    color: white;
+    font-size: 40px;
+    padding-left: 100px;
+    font-weight: 400;
+}
+
+.emailInput input{
+    width: 598px;
+    height: 67px;
+    border-radius: 50px;
+    border: none;
+}
+.emailInput ::placeholder{
+    padding-left: 30px;
+    color: black;
+}
+ /* 2nd buy sextion  */
+ .second_buyDiv{
+     height: 844px;
+ }
+
+  /* print press blog part */
+.blog_cardDiv{
+    transform: translateY(100px);
+}
+.printPress{
+    margin-top: 147px;
+}
+.blog-text{
+    margin-bottom: 0px;
+}
+.blog_cardDiv{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.blog_cardDiv .card{
+  width: 397px;
+  height: 500px;
+  background-color: white;
+}
+.blog_cardDiv .card img{
+    width: 397px;
+    object-fit: cover;
+    height:356px ;
+}
+.blog_cardDiv .card h2{
+    font-size: 25px;
+    padding: 35px;
+    font-weight: 400;
+}
+ /* top Book div */
+.topBook_div{
+    height: 900px;
+    background-color: #d9dbcd;
+
+}
+.topBook_text{
+    padding-top: 270px;
+    padding-bottom: 80px;
+}
+.topDiv_cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logoCard{
+    width: 280px;
+    height: 300px;
+}
+.logoCard img{
+    width: 90px;
+    height: 90px;
+    padding-left: 110px;
+    padding-bottom: 0px;
+    transform: translateY(-35px);
+}
+.logoCard h2{
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+    padding: 40px 90px 0px 50px;
+}
+.logoCard1{
+    background-color:#609686 ;
+}
+.logoCard2{
+    background-color:#dc5a36;
+}
+.logoCard3{
+    background-color:#385776;
+}
+.logoCard4{
+    background-color:#797ea4;
+}
+.logoCard p a{
+    color: white;
+    font-weight: 400;
+    font-size: 19px;
+    padding-left: 50px;
+    padding-right: 20px;
+   
+}
+/* footer part */
+.footerPart1{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 200px;
+    height:450px ;
+}
+.footerPart1 .imageDiv img{
+    height: 91px;
+    object-fit: cover;
+}
+.footerPart1 p{
+    color: #484c53;
+    font-size: 20px;
+}
+.pera2{
+    color: #cc302b !important;
+}
+/* privicy policy */
+
+.policy2{
+    height: 50px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer_list{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.policy2 ul {
+    list-style-type: none;
+
+}
+.policy2 ul li a{
+    color: #343434;
+}
+
+/* responsive part */
+@media screen and (max-width:1314px) {
+    .authorsName-div{
+        height: 1200px;
+    }
+    hr { 
+        display: none;
+      } 
+      .blog_cardDiv .card{
+        width: 306px;
+        height: 400px;
+        background-color: white;
+
+      }
+      .blog_cardDiv{
+        gap: 10px;
+        justify-content: space-around;
+      }
+      .blog_cardDiv .card img{
+        width: 307px;
+        object-fit: cover;
+        height:306px ;
+    }
+    .blog_cardDiv .card h2{
+        font-size: 20px;
+        padding: 15px;
+        font-weight: 400;
+    }
+    .printPress{
+        margin-top: 500px;
+    }
+    .buy_div{
+        margin-bottom: 600px;
+    } 
+    .book_type{
+        margin-bottom: 400px;
+    }
+    .topBook_div{
+        height: 1300px;   
+    }
+    .topDiv_cards{
+       gap: 20px;
+    }
+}
+@media screen and (max-width:1199px) {
+
+    .navitems{
+        height: auto;
+        padding:20px 40px;
+    }
+    .logoimg{
+        width:200px;
+    }
+    .navlist{
+        width:70%;
+    }
+    .listitems{
+        gap:15px;
+    }
+    .bannar_div{
+        width: 100%;
+    }
+    .bannar_div{
+        height: 370px;
+    }
+    .bannarText{
+        padding-top: 80px;
+    }
+    .bannarText p{
+        font-size: 20px;
+        padding-bottom: 33px;
+    }
+    .bannarText h1{
+        font-size: 53px;
+    }
+    .buy_div{
+        margin-top: 70px;
+    }
+    .left h2{
+        font-weight: 400;
+        font-size: 33px;
+    }
+    .card img{
+        height: 443px;
+        width: 260px;
+        object-fit: cover;
+    }
+    /* .buy_div{
+        margin-top: 100px;
+        height: 200px;
+    }   */
+    .wrapper{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    /* .book_type{
+        height: 350px;
+        margin-top: 20px;
+    } */
+    .markLamster_bookDiv{
+        gap: 70px;
+    }
+    .emailText{
+        width: 470px;
+    }
+    .emailText h2{
+        color: white;
+        font-size: 30px;
+        padding-left: 100px;
+        font-weight: 400;
+    }
+    .emailInput input{
+        width: 408px;
+        height: 50px;
+        border-radius: 50px;
+        border: none;
+    }
+    .footerPart1 .imageDiv img{
+        width: 240px;
+        height: 80px;
+        object-fit: cover;
+    }
+    .footerPart1{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        height:450px ;
+    }
+}
+@media screen and (max-width:1140px) {
+    .book_type{
+        height: 750px;
+        margin-top: 420px;
+    }
+}
+@media screen and (max-width:991px) {
+    .logoimg{
+        width:150px;
+        padding-left: 25px;
+    }
+    .logopart{
+        width:20%;
+    }
+    .navlist{
+        width:70%;
+    }
+    .listitems{
+        gap:15px;
+    }
+    .bannar_div{
+        height: 300px;
+    }
+    .bannarText{
+        padding-top: 54px;
+    }
+    .bannarText p{
+        font-size: 17px;
+        padding-bottom: 20px;
+    }
+    .bannarText h1{
+        font-size: 41px;
+    }
+    .bannarText button{
+        padding: 13px 26px;
+    
+    }
+    .listitems li a {
+        font-size: 14px;
+    }
+    .buy_div{
+        margin-top: 60px;
+    }
+    .left h2{
+        font-size: 30px;
+    }
+    .card img{
+        height: 400px;
+        width: 250px;
+        object-fit: cover;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .printPress{
+        margin-top: 100px;
+    }
+    .buy_div{
+        margin-bottom: 200px;
+    } 
+    .book_type{
+        margin-bottom: 100px;
+    }
+    .markLamster_bookDiv{
+        height: 1300px;
+    }
+    .textPart{
+        height: 575px;
+        width: 90%;
+        text-align: center;
+    }
+    .markLamster_bookDiv{
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+        background-color: #eedfcc;
+        gap: 50px;
+        flex-direction: column;
+    }
+    .bookImage img{
+        height: 400px;
+        width: 250px;
+    }
+    .authorsName-div{
+        height: 1000px;
+    }
+    .headingPart{
+        padding: 50px 50px;
+    }
+    .authorsImages{
+        gap: 30px;
+    }
+    .emailPart{
+        height: 280px;
+        background-color: #5b9894;
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        flex-direction: column;
+    }
+    .emailText h2{
+        padding-left: 0px;
+    }
+    .emailText{
+        width:100% ;
+        text-align: center;
+        padding-top: 40px;
+    }
+    .printPress{
+        margin-top: 300px;
+    }
+    .topDiv_cards{
+        gap: 20px;
+        justify-content: center;
+     }
+
+
+}
+@media screen and (max-width:871px) {
+    .markLamster_bookDiv{
+        height: 1100px;
+        margin-top: 350px;
+    }
+}
+@media screen and (max-width:767px) {
+
+    .navitems{      
+        flex-direction: column;
+    }
+    
+    .logopart{
+        width:100%;
+    }
+    .logotoggele{
+        display: block;
+    } 
+  .navlist{
+    width:100%;
+    display:none;
+  }
+  .listitems{
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    
+  }
+  .bannar_div{
+    height: 220px;
+}
+.bannarText{
+    padding-top: 40px;
+}
+.bannarText p{
+    font-size: 17px;
+    padding-bottom: 18px;
+}
+.bannarText h1{
+    font-size: 31px;
+    padding-bottom: 25px;
+}
+.bannarText button{
+    padding: 10px 20px;
+
+}
+.card img{
+    height: 370px;
+    width: 230px;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+.book_type_imageDiv{
+    gap: 28px;
+}
+.book_type{
+    height: 1000px;
+    margin-top: 350px;
+}
+.markLamster_bookDiv{
+    height: 1100px;
+    margin-top: 50px;
+}
+.leftSide h2{
+    font-size: 28px;
+}
+.leftSide p{
+    font-size: 17px;
+    font-weight: 400;
+ }
+ .rightSide p a{
+     color: white;
+     text-align: center;
+     font-size: 17px;
+    font-weight: 400;
+ }
+}
+@media screen and (max-width:679px) {
+    .topBook_div{
+        height: 1750px;
+    }
+    .footerPart1{
+        justify-content:center;
+        align-items: center;
+       flex-direction: column;
+       gap: 10px;
+        text-align: center;
+    }
+    .footerPart1 .imageDiv img{
+        width: 265px;
+        height: 70px;
+    }
+    .text1{
+        padding-bottom: -50px;
+    }
+    .text2{
+        padding-bottom: 50px;
+    }
+    .footerPart1{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        
+    }
+    .footerPart1 .text2{
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+    .policy{
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width:579px) {
+    .markLamster_bookDiv{
+        margin-top: 600px;
+    }
+    .image_card{
+        height: 360px;
+        width: 220px;
+    }
+}
+@media screen and (max-width:565px) {
+    .logoimg{
+        padding-left: 5px;
+    }
+    .bannar_div{
+        height: 160px;
+    }
+    .bannarText{
+        padding-top: 9px;
+    }
+    .bannarText p{
+        font-size: 16px;
+        padding-bottom: 15px;
+        padding-top: 10px;
+    }
+    .bannarText h1{
+   
+        font-size: 19px;
+        padding-bottom: 9px;
+    }
+    .bannarText button{
+        padding: 10px 15px;
+        font-size: 9px;
+    
+    } 
+    .card img{
+        height: 360px;
+        width: 220px;
+        object-fit: cover;
+        justify-content: center;
+        align-items: center;
+    }
+    .product {
+        justify-content: center;
+    }
+    .card{
+        padding-bottom: 15px;
+    }
+    .left h2{
+        font-size: 22px;
+    }
+    .right p a{
+        font-size: 17px;
+    }
+    .buy_div{
+        margin-top: 30px;
+    }
+    .markLamster_bookDiv{
+        margin-top: 600px;
+    }
+    .headingPart{
+        padding: 40px 40px;
+    }
+    .book_type_imageDiv{
+        gap: 18px;
+    }
+    .emailInput input{
+        width: 308px;
+        height: 40px;
+    }
+    .emailText h2{
+        font-size: 20px;
+    }
+    
+}
+@media screen and (max-width:590px) {
+    .authorsName-div{
+        height: 1700px;
+    }
+    .book_type_imageDiv{
+        gap: 20px;
+    }
+    .image_card{
+        width: 280px;
+        height: 340px;
+       
+    }
+}
+@media screen and (max-width:540px) {
+    .book_type{
+        height: 1570px;
+        margin-top: 1250px;
+            margin-bottom: 50px;
+    }
+
+    .right p a{
+        font-size: 15px !important;
+    }
+    .wrapper{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .markLamster_bookDiv{
+        margin-top: 50px;
+    }
+    .leftSide p{
+        font-size: 14px;
+     }
+     .rightSide p a{
+         font-size: 14px;
+     }
+     .leftSide h2{
+        font-size: 25px;
+        padding-bottom: 15px;
+    }
+   
+}
+@media screen and (max-width:520px){
+    .printPress{
+        margin-top: 1200px;
+    }
+}
+@media screen and (max-width:320px) {
+    /* .bannar_div{
+        height: 100px;
+    }
+    .bannarText{
+        padding-top: 5px;
+    }
+    .bannarText p{
+        font-size: 15px;
+        padding-bottom: 15px;
+    }
+    .bannarText h1{
+        font-size: 17px;
+        padding-bottom: 5px;
+    }
+    .bannarText button{
+        padding: 10px 15px;
+        font-size: 8px;
+    
+    }  */
+}
